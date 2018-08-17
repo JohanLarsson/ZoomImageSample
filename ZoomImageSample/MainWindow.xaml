@@ -1,0 +1,25 @@
+﻿<Window
+    x:Class="ZoomImageSample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:effects="http://gu.se/Geometry"
+    xmlns:local="clr-namespace:ZoomImageSample"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <TabControl>
+        <TabItem Header="Hustler">
+            <effects:Zoombox>
+                <Image Source="Images/Hustler.jpg" />
+            </effects:Zoombox>
+        </TabItem>
+        <TabItem Header="Beast">
+            <effects:Zoombox>
+                <Image Source="Images/Beast.jpg" />
+            </effects:Zoombox>
+        </TabItem>
+    </TabControl>
+</Window>
